@@ -1,12 +1,12 @@
 name: rspec_build_check
-
 on:
   pull_request:
     branches:
       - test
-
 jobs:
   test:
+    strategy:
+      fail-fast: false
     name: Run gemspec
     runs-on: ubuntu-latest
     steps:
