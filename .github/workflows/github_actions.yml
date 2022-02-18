@@ -9,7 +9,6 @@ jobs:
   test:
     name: Run gemspec
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
